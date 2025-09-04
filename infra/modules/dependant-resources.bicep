@@ -146,9 +146,6 @@ resource aiServices 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   }
   kind: 'AIServices' // or 'OpenAI'
   properties: {
-    apiProperties: {
-      statisticsEnabled: false
-    }
   }
 }
 
