@@ -69,7 +69,7 @@ def create_multimodal_vector_store(index_name: str, azure_openai_api_key: str, a
             type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
             searchable=True,
             vector_search_dimensions=len(embedding_function("Text")),
-            vector_search_profile_name="myHnswProfile",
+            # vector_search_profile_name="myHnswProfile",
         ),
         SearchableField(
             name="metadata",
